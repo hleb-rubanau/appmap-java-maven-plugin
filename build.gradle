@@ -115,3 +115,9 @@ task generatePluginDescriptor(type: JavaExec, dependsOn: compileJava) {
 }
 
 project.jar.dependsOn(generatePluginDescriptor)
+
+apply plugin: 'java' 
+java {
+    withSourcesJar() 
+    withJavadocJar()  //-- fails with errors, see wowrkaround below
+}
