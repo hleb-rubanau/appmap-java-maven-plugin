@@ -69,8 +69,8 @@ dependencies {
     implementation 'com.appland:appmap-agent:0.5.0'
 }
 
-group = 'com.appland'
-description = 'Maven plugin to record AppMaps with the appmap.jar agent'
+//group         = paramGroupId
+//description   = paramDescription
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
@@ -170,6 +170,7 @@ publishing {
 
  
             // 2. artifacts 
+            from components.java
             //// the artifacts below added automatically by `java { with... }` block above
             // artifact sourcesJar
             // artifact javadocJar
