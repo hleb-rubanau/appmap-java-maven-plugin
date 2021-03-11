@@ -45,6 +45,8 @@ goal to load the AppMap agent into your test execution and record tests:
 mvn com.appland:appmap-maven-plugin:prepare-agent test
 ```
 
+Continue on to add AppMap to your `pom.xml` as a plugin.
+
 ## About
 
 The AppMap Maven Plugin provides simple method for recording AppMaps in running
