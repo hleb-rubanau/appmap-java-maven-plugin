@@ -100,7 +100,7 @@ for details.
 <plugin>
     <groupId>com.appland</groupId>
     <artifactId>appmap-maven-plugin</artifactId>
-    <version>${appmap-java.version}</version>
+    <version>${appmap.version}</version>
     <configuration>
         <configFile>appmap.yml</configFile>
         <outputDirectory>target/appmap</outputDirectory>
