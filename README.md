@@ -121,12 +121,8 @@ for details.
 ## Running
 
 With the [above configuration](#configuration-example) added to your `pom.xml`,
-use the `appmap:prepare-agent` goal to load the AppMap agent. AppMaps will be
-automatically recorded when the agent is active and tests are run.
-
-```sh
-mvn appmap:prepare-agent test
-```
+AppMaps will be automatically recorded when the agent is active and tests are
+run.
 
 Alternatively, you can load the AppMap agent without modifying your `pom.xml`.
 See the [Quickstart](#quickstart) section for more information.
