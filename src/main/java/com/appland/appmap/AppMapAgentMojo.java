@@ -16,6 +16,7 @@ public abstract class AppMapAgentMojo extends AbstractMojo {
 
     static final String APPMAP_AGENT_ARTIFACT_NAME = "com.appland:appmap-agent";
     static final String SUREFIRE_ARG_LINE = "argLine";
+    static final List<String> DEBUG_FLAGS = Arrays.asList("hooks", "locals", "http");
 
     @Parameter(property = "skip")
     protected boolean skip = false;
@@ -27,7 +28,7 @@ public abstract class AppMapAgentMojo extends AbstractMojo {
     protected File configFile = new File("appmap.yml");
 
     @Parameter(property = "project.debug")
-    protected Boolean debug = false;
+    protected String debug = "info";
 
     @Parameter(property = "project.debugFile")
     protected File debugFile = new File("target/appmap/agent.log");
@@ -64,7 +65,7 @@ public abstract class AppMapAgentMojo extends AbstractMojo {
         List<String> args = new ArrayList<String>();
         final String oldConfig = getCurrentArgLinePropertyValue();
         if (oldConfig != null) {
-            final List<String> oldArgs = Arrays.asList(oldConfig.split(" "));
+            final List<String> oldArgs = new ArrayList<>(Arrays.asList(oldConfig.split(" ")));
             removeOldAppMapAgentFromCommandLine(oldArgs);
             args.addAll(oldArgs);
         }
@@ -97,7 +98,14 @@ public abstract class AppMapAgentMojo extends AbstractMojo {
                 format("-javaagent:%s=%s", getAppMapAgentJar(), this)
         ));
 
-        if (this.debug) {
+        if (this.debug != null && !this.debug.isEmpty()) {
+            final List<String> debugTokens = new ArrayList<>(Arrays.asList(this.debug.split("[,|\\s]")));
+            for (String token : debugTokens) {
+                if (DEBUG_FLAGS.contains(token)) {
+                    args.add("-Dappmap.debug." + token);
+                }
+            }
+
             args.add(0, "-Dappmap.debug");
             args.add(0, "-Dappmap.debug.file=" + StringEscapeUtils.escapeJava(format("%s", debugFile)));
         }
