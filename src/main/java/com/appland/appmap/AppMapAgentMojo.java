@@ -64,7 +64,7 @@ public abstract class AppMapAgentMojo extends AbstractMojo {
         List<String> args = new ArrayList<String>();
         final String oldConfig = getCurrentArgLinePropertyValue();
         if (oldConfig != null) {
-            final List<String> oldArgs = Arrays.asList(oldConfig.split(" "));
+            final List<String> oldArgs = new ArrayList<>(Arrays.asList(oldConfig.split(" ")));
             removeOldAppMapAgentFromCommandLine(oldArgs);
             args.addAll(oldArgs);
         }
