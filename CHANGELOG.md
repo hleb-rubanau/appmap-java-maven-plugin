@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/applandinc/appmap-maven-plugin/compare/v1.0.2...v1.1.0) (2021-03-19)
+
+
+### Bug Fixes
+
+* Don't throw an exception if the plugin is run twice ([6b1ef36](https://github.com/applandinc/appmap-maven-plugin/commit/6b1ef36cafbfe18115236055c8842c4e4dffcde8))
+
+
+### Features
+
+* Add ability to specify and enable individual debug flags ([bd29ec1](https://github.com/applandinc/appmap-maven-plugin/commit/bd29ec180d8fcb9ed3c05e5548109ca4001bcd5c))
+
 ## [1.0.2](https://github.com/applandinc/appmap-maven-plugin/compare/v1.0.1...v1.0.2) (2021-03-18)
 
 
