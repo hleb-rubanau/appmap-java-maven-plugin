@@ -36,7 +36,7 @@ def paramMavenRepo      = findProperty('mavenRepo')             ?: defMavenRepo
 
 def paramVersion        = findProperty('paramVersion')
 def travisVersion       = System.getenv("TRAVIS_BRANCH")
-def versionLikeRegexp   = /^\d+\.\d+.*/
+def versionLikeRegexp   = /^v?\d+\.\d+.*/
 def travisVersionOK     = travisVersion && (travisVersion ==~ versionLikeRegexp)
 paramVersion = paramVersion ?: ( travisVersionOK ? travisVersion : defVersion )
 
