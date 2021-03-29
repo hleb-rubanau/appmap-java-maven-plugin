@@ -38,7 +38,7 @@ def paramVersion        = findProperty('paramVersion')
 def travisVersion       = System.getenv("TRAVIS_BRANCH")
 def versionLikeRegexp   = /^v?\d+\.\d+.*/
 def travisVersionOK     = travisVersion && (travisVersion ==~ versionLikeRegexp)
-paramVersion = paramVersion ?: ( travisVersionOK ? travisVersion : defVersion )
+paramVersion = paramVersion ?: ( travisVersionOK ? travisVersion.replaceAll(/^v/,'') : defVersion )
 
 
 repositories {
