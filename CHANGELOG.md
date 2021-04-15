@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.0.0...v1.1.0) (2021-04-15)
+
+
+### Features
+
+* **build:** for debug purposes, publish to sonatype only ([22839da](https://github.com/hleb-rubanau/appmap-java-maven-plugin/commit/22839da39a74a7035065f0095cde70e36e86014f))
+
 # 1.0.0 (2021-04-15)
 
 
