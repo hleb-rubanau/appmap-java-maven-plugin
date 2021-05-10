@@ -33,3 +33,4 @@ deploy:
     script: semantic-release
     on:
       branch: master
+
