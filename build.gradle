@@ -41,6 +41,7 @@ def versionLikeRegexp   = /^\d+\.\d+.*/
 def travisVersionOK     = travisVersion && (travisVersion ==~ versionLikeRegexp)
 paramVersion = paramVersion ?: ( travisVersionOK ? travisVersion : defVersion )
 
+
 // required by NexusPublishing
 version = paramVersion
 group   = paramGroupId
