@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.1...v1.1.2) (2021-05-10)
+
+
+### Bug Fixes
+
+* **ci:** nothing changed but we need new version due to bug in Travis settings ([778e362](https://github.com/hleb-rubanau/appmap-java-maven-plugin/commit/778e36276a0047370cfcf4ec602fb79596c0c27f))
+
 ## [1.1.1](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.0...v1.1.1) (2021-05-10)
 
 
