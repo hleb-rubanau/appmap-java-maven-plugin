@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.2...v1.1.3) (2021-05-10)
+
+
+### Bug Fixes
+
+* **ci:** trigger new Travis build to tweak description on formerly released package ([f2ce750](https://github.com/hleb-rubanau/appmap-java-maven-plugin/commit/f2ce7503199396126fc74f0fb72f0795747f1b6a))
+
 ## [1.1.2](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.1...v1.1.2) (2021-05-10)
 
 
