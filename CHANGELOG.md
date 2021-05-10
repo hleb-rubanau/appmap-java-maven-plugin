@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.0...v1.1.1) (2021-05-10)
+
+
+### Bug Fixes
+
+* **ci:** "release" new version to pick up customized description ([488c5f5](https://github.com/hleb-rubanau/appmap-java-maven-plugin/commit/488c5f55cfa9379fe49af9ebf45785f8a27f8e07))
+
 # [1.1.0](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.0.0...v1.1.0) (2021-04-15)
 
 
