@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.4...v1.1.5) (2021-05-11)
+
+
+### Bug Fixes
+
+* **ci:** re-trigger deployment (under new artifact id) ([74c277b](https://github.com/hleb-rubanau/appmap-java-maven-plugin/commit/74c277b2e9885d3c660323b57c84a67f2bae7217))
+
 ## [1.1.4](https://github.com/hleb-rubanau/appmap-java-maven-plugin/compare/v1.1.3...v1.1.4) (2021-05-11)
 
 
